@@ -2,12 +2,12 @@
     padding: 20px;
 }
 div{
-    background-color: beige;
+    background-color: rgba(253, 195, 128, 0.952);
     text-align: center;
 }
 /*etiqueta nombre*/
-id.nombre{
+#nombre{
  font-weight: bold;
- margin-top: 40%;
- margin-left: 10px;
+ margin-top: 30%;
+ margin-left: 5px;
 }
