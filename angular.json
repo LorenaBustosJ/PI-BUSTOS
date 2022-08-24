@@ -24,10 +24,10 @@
             ],
             "styles": [
               "src/styles.css",
-              "ProyectoIntegrador-BUSTOS.Lorena/node_modules/bootstrap-5.0.1-dist/css/bootstrap.css"
+              "node_modules/bootstrap/css/bootstrap.css"
             ],
             "scripts": [
-              "ProyectoIntegrador-BUSTOS.Lorena/node_modules/bootstrap-5.0.1-dist/js/bootstrap.js"
+              "node_modules/bootstrap/js/bootstrap.js"
             ]
           },
           "configurations": {
