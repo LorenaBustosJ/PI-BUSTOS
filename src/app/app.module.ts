@@ -12,7 +12,6 @@ import { AcercadeComponent } from './components/acercade/acercade.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { HsComponent } from './components/hs/hs.component';
-import { NgCircleProgressModule } from 'ng-circle-progress';
 
 
 @NgModule({
@@ -31,7 +30,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FormsModule,
+    FormsModule,  
   ],
   providers: [],
   bootstrap: [AppComponent],
