@@ -1,13 +1,11 @@
 package com.portfolio.mgb.Security.Enums.Entity;
 
-import static com.sun.tools.javac.main.Option.A;
 import java.util.Collection;
 import java.util.List;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.SimpleGarantedAuthority;
-import org.springframework.security.core.authorities.SimpleGarantedAuthority;
+//import org.springframework.security.core.authorities.SimpleGarantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 public class UsuarioPrincipal implements UserDetails {
