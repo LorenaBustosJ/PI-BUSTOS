@@ -1,4 +1,4 @@
-package com.portfolio.mgb.Controler;
+package com.portfolio.mgb.Controller;
 
 import com.portfolio.mgb.Entity.Persona;
 import com.portfolio.mgb.Interface.IPersonaService;

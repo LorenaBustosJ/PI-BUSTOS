@@ -5,7 +5,7 @@
 package com.portfolio.mgb.Security.Service;
 
 import com.portfolio.mgb.Security.Enums.Entity.Usuario;
-import com.portfolio.mgb.Security.Enums.Entity.UsuarioPrincipal;
+import com.portfolio.mgb.Security.Entity.UsuarioPrincipal;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

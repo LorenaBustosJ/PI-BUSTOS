@@ -24,4 +24,8 @@ public class RolService {
     public void save(Rol rol){
         irolRepository.save(rol);
     }
+
+    public Object getRolNombre(RolNombre rolNombre) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

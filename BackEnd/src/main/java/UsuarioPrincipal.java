@@ -1,14 +1,17 @@
-package com.portfolio.mgb.Security.Enums.Entity;
-
+import com.portfolio.mgb.Security.Enums.Entity.Rol;
+import com.portfolio.mgb.Security.Enums.Entity.Usuario;
 import java.util.Collection;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.SimpleGarantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 //import org.springframework.security.core.authorities.SimpleGarantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 public class UsuarioPrincipal implements UserDetails {
+
+    private static Set<Rol> roles;
 
     private String nombre;
     private String nombreUsuario;
@@ -26,7 +29,9 @@ public class UsuarioPrincipal implements UserDetails {
     }
 
     public static UsuarioPrincipal build(Usuario usuario) {
-        List<GrantedAuthority> authorities = usuario.getRoles().stream().map(rol -> new SimpleGarantedAuthority(rol.getRolNombre().name())).collect(Collectors.toList());
+       List<GrantedAuthority> authorities = usuario.getRoles(roles).stream()
+                .map(rol -> new SimpleGrantedAuthority(rol.getRolNombre().name())).collect(Collectors
+                .toList());
         return new UsuarioPrincipal(usuario.getNombre(), usuario.getNombreUsuario(), usuario.getEmail(), usuario.getPassword(), authorities);
     }
 

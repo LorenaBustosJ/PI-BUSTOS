@@ -37,7 +37,7 @@ public class Usuario {
      
 //constructores
 
-    public Usuario() {
+    public Usuario(String nombre1, String nombreUsuario1, String email1, String encode) {
     }
 
     public Usuario(String nombreUsuario) {
@@ -91,13 +91,10 @@ public class Usuario {
         this.password = password;
     }
 
-    public Set<Rol> getRoles() {
+    public Set<Rol> getRoles(Set<Rol> roles) {
         return roles;
     }
 
-    public void setRoles(Set<Rol> roles) {
-        this.roles = roles;
-    }
-    
+
     
 }
