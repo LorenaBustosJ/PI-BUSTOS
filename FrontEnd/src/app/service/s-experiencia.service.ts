@@ -8,31 +8,27 @@ import { Experiencia } from '../model/experiencia';
   providedIn: 'root'
 })
 export class SExperienciaService {
-<<<<<<< HEAD
-  expURL = 'https://backend-mgb.herokuapp.com/explab/';
-=======
-  URL = environment.URL + 'explab/';
->>>>>>> dbccedd5c18384aa757cbb7ab7d9f7f3bc0e7672
+  experienciaURL = 'http://localhost:4200/experiencia/';
 
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Experiencia[]>{
-    return this.httpClient.get<Experiencia[]>(this.URL + 'lista');
+    return this.httpClient.get<Experiencia[]>(this.experienciaURL + 'lista');
   }
 
   public detail(id: number): Observable<Experiencia>{
-    return this.httpClient.get<Experiencia>(this.URL + `detail/${id}`);
+    return this.httpClient.get<Experiencia>(this.experienciaURL + `detail/${id}`);
   } 
 
   public save(experiencia: Experiencia): Observable<any>{
-    return this.httpClient.post<any>(this.URL + 'create', experiencia);
+    return this.httpClient.post<any>(this.experienciaURL + 'create', experiencia);
   }
 
   public update(id: number, experiencia: Experiencia): Observable<any>{
-    return this.httpClient.put<any>(this.URL + `update/${id}`, experiencia);
+    return this.httpClient.put<any>(this.experienciaURL + `update/${id}`, experiencia);
   }
 
   public delete(id: number): Observable<any>{
-    return this.httpClient.delete<any>(this.URL + `delete/${id}`);
+    return this.httpClient.delete<any>(this.experienciaURL + `delete/${id}`);
   }
 }
