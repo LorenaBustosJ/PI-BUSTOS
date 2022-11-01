@@ -95,6 +95,10 @@ public class Usuario {
         return roles;
     }
 
+    public void getRoles(Set<com.portfolio.mgb.Security.Entity.Rol> roles) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
 
     
 }

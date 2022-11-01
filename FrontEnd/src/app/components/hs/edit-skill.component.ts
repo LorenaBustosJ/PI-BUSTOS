@@ -9,7 +9,7 @@ import { SkillService } from 'src/app/service/skill.service';
   styleUrls: ['./edit-skill.component.css']
 })
 export class EditSkillComponent implements OnInit {
-  skill: Skill = null;
+  skill! : null;
 
   constructor(
     private skillS: SkillService,
